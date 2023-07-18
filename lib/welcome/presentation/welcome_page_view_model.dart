@@ -28,7 +28,8 @@ abstract class _WelcomePageViewModelBase with Store {
   void onStartButtonClicked() {
     onErrorFeedback = null;
     isLoadingRequest = true;
-
-    isLoadingRequest = false;
+    Future.delayed(const Duration(seconds: 2), () {
+      isLoadingRequest = false;
+    });
   }
 }

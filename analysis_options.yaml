@@ -1,1 +1,19 @@
 include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - lib/generated/**
+    - lib/**/*.config.dart
+    - lib/**/*.g.dart
+    - lib/*.g.dart
+    - test/*.mocks.dart
+    - test/**/*.mocks.dart
+    - test/**/*.g.dart
+
+linter:
+  rules:
+    constant_identifier_names: false
+    use_key_in_widget_constructors: false
+    cancel_subscriptions: true
+    overridden_fields: false
+    require_trailing_commas: true

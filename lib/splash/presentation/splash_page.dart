@@ -23,14 +23,15 @@ class SplashPage extends StatelessWidget {
             builder: (context, snapshot) {
               final opacity = snapshot.data;
               return AnimatedOpacity(
-                  duration: const Duration(milliseconds: 250),
-                  opacity: opacity ?? 0.0,
-                  child: Container(
-                    alignment: Alignment.center,
-                    width: 200,
-                    height: 200,
-                    child: Text('This is the splash page'),
-                  ));
+                duration: const Duration(milliseconds: 250),
+                opacity: opacity ?? 0.0,
+                child: Container(
+                  alignment: Alignment.center,
+                  width: 200,
+                  height: 200,
+                  child: const Text('This is the splash page'),
+                ),
+              );
             },
           ),
         ),

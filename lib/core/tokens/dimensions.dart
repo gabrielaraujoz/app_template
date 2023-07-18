@@ -13,4 +13,13 @@ class Dimensions {
   static const base12 = 48.0;
   static const base15 = 60.0;
   static const base20 = 80.0;
+
+  static const elevationBaseHalf = 2.0;
+  static const elevationBase = 4.0;
+
+  static const borderRadiusBaseHalf = 2.0;
+  static const borderRadiusBase = 4.0;
+  static const borderRadiusBase2 = 8.0;
+
+  static const iconSize = 20.0;
 }
